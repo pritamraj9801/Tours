@@ -1,27 +1,47 @@
 class TourCategory {
-  constructor(name, description) {
+  constructor(name, description,imageURL) {
     this.name = name;
     this.description = description;
+    this.imageURL=imageURL;
   }
 }
 class TourLocation {
-  constructor(name, description) {
+  constructor(name, description, imageURL) {
+    this.imageURL = imageURL || "./images/Tours/TourCategory1/tour1.jpg";
     this.name = name;
     this.description = description;
   }
 }
 class Testimonial{
-  constructor(author, content) {
+  constructor(author, content,imageURL) {
     this.author = author;
     this.content = content;
+    this.imageURL = imageURL || "./images/testimonials/testimonial1.jpg"; // Default image if not provided
   }
 }
 class Package{
-  constructor(name, price, description) {
+  constructor(name, price, description,imageURL) {
     this.name = name;
     this.price = price;
     this.description = description;
+    this.imageURL = imageURL || "./images/Tours/TourCategory1/tour1.jpg"; 
   }
+}
+class Tour {
+  constructor(name, price, description,imageURL) {
+    this.name = name;
+    this.price = price;
+    this.description = description;
+    this.imageURL = imageURL;
+  }
+}
+export function getTours(){
+  return [
+    new Tour("Grand Canyon Tour", 199.99, "Experience the breathtaking views of the Grand Canyon.","./images/Tours/TourCategory1/tour1.jpg"),
+    new Tour("Eiffel Tower Tour", 149.99, "Visit the iconic Eiffel Tower in Paris.","./images/Tours/TourCategory1/tour1.jpg"),
+    new Tour("Great Wall of China Tour", 299.99, "Walk along the historic Great Wall of China.","./images/Tours/TourCategory1/tour1.jpg"),
+    new Tour("Machu Picchu Tour", 249.99, "Explore the ancient ruins of Machu Picchu in Peru.","./images/Tours/TourCategory1/tour1.jpg"),
+  ];
 }
 export function GetPackages() {
   return [
@@ -40,15 +60,20 @@ export function getTestimonials(){
 }
 export function getTourCategories (){
  return [
-    new TourCategory("Adventure", "Explore the wild with our adventure tours."),
-    new TourCategory("Cultural", "Immerse yourself in the local culture."),
-    new TourCategory("Relaxation", "Unwind with our relaxation packages."),
-    new TourCategory("Historical", "Discover the history of ancient civilizations."),
+    new TourCategory("Adventure", "Explore the wild with our adventure tours.","./images/Tours/TourCategory1/tour1.jpg"),
+    new TourCategory("Cultural", "Immerse yourself in the local culture.","./images/Tours/TourCategory1/tour1.jpg"),
+    new TourCategory("Relaxation", "Unwind with our relaxation packages.","./images/Tours/TourCategory1/tour1.jpg"),
+    new TourCategory("Historical", "Discover the history of ancient civilizations.","./images/Tours/TourCategory1/tour1.jpg"),
+    new TourCategory("Historical", "Discover the history of ancient civilizations.","./images/Tours/TourCategory1/tour1.jpg"),
+    new TourCategory("Historical", "Discover the history of ancient civilizations.","./images/Tours/TourCategory1/tour1.jpg"),
+    new TourCategory("Historical", "Discover the history of ancient civilizations.","./images/Tours/TourCategory1/tour1.jpg"),
+    new TourCategory("Historical", "Discover the history of ancient civilizations.","./images/Tours/TourCategory1/tour1.jpg"),
+    new TourCategory("Historical", "Discover the history of ancient civilizations.","./images/Tours/TourCategory1/tour1.jpg"),
   ];
 }
 export function getTourLocations (){
   return [
-    new TourLocation("Grand Canyon", "Experience the breathtaking views of the Grand Canyon."),
+    new TourLocation("Grand Canyon", "Experience the breathtaking views of the Grand Canyon.","./images/Tours/TourCategory1/tour1.jpg"),
     new TourLocation("Eiffel Tower", "Visit the iconic Eiffel Tower in Paris."),
     new TourLocation("Great Wall of China", "Walk along the historic Great Wall of China."),
     new TourLocation("Machu Picchu", "Explore the ancient ruins of Machu Picchu in Peru."),

@@ -1,0 +1,108 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+/* ------------------------------------ Global Styling */
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.text-white {
+  color: var(--color-white);
+}
+.text-black {
+  color: var(--color-black);
+}
+.text-center {
+  text-align: center;
+}
+/* ------------------------------------ Home */
+#welcomeSection {
+  background: url("../images/Designs/welcomeBg.jpg");
+  min-height: 110vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcomeSectionBox {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 60vw;
+  height: 500px;
+}
+#aboutSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.aboutImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#tourLocations {
+  display: flex;
+  flex-wrap: wrap;
+}
+.locationImage {
+  width: 300px;
+  height: 400px;
+}
+#testimonials {
+  display: flex;
+  flex-wrap: wrap;
+}
+.testimonialImage {
+  width: 300px;
+  height: 400px;
+}
+#whyUsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.whyUsBox {
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+/* ------------------------------------ Services */
+#tourCategoriesContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tourCategory {
+  border: 1px solid #ccc;
+  margin: 1rem;
+}
+.tourCategoryImg {
+  width: 300px;
+  height: 400px;
+}
+/* ------------------------------------ Tours */
+#toursContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.tour {
+  border: 1px solid #ccc;
+  margin: 1rem;
+}
+.tourImage {
+  width: 300px;
+  height: 400px;
+}
+/* ------------------------------------ packages */
+#packages {
+  display: flex;
+  flex-wrap: wrap;
+}
+.packageImage {
+  width: 300px;
+  height: 400px;
+}

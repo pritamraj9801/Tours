@@ -11,7 +11,7 @@ function App() {
   return (
      <Router>
       <Header />
-      <div style={{ padding: '1rem' }}>
+      <div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
