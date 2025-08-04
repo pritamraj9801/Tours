@@ -10,10 +10,23 @@ body {
 :root {
   --color-white: #fff;
   --color-black: #000;
-  --theme-color:#C5B0CD;
+  --theme-color: #447d9b;
+  --theme-bg-1:#676744;
+}
+.mt-4{
+  margin-top: 4rem;
 }
 .mt-2 {
   margin-top: 2rem;
+}
+.mt-1{
+  margin-top: 1rem;
+}
+.p-1{
+  padding: 1rem;
+}
+.text-justify{
+  text-align: justify;
 }
 .text-white {
   color: var(--color-white);
@@ -25,15 +38,20 @@ body {
   text-align: center;
 }
 /* ------------------------------------ Header */
-nav{
+nav {
   background-color: var(--theme-color);
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
+  padding: 1rem 2rem;
 }
-#navLinks a{
+#tourIcon {
+  font-size: 1.5rem;
+}
+#navLinks a {
   text-decoration: none;
   padding: 0 10px;
+  color: var(--color-black);
 }
 /* ------------------------------------ Home */
 #welcomeSection {
@@ -45,9 +63,10 @@ nav{
   align-items: center;
 }
 .welcomeSectionBox {
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(149, 157, 165, 0.473) 0px 8px 24px;
   width: 60vw;
   height: 500px;
+  padding: 2rem;
 }
 #aboutSection {
   display: grid;
@@ -59,18 +78,28 @@ nav{
   align-items: center;
 }
 #tourLocations {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+.tourLocation {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .locationImage {
   width: 300px;
   height: 400px;
 }
 #testimonials {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+}
+.testimonial{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
 }
 .testimonialImage {
   width: 300px;
@@ -80,19 +109,37 @@ nav{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+.whyUsHeading{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
 .whyUsBox {
   margin: 1rem;
   padding: 1rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+.btn-primary {
+  background-color: var(--theme-color);
+  color: var(--color-white);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 3rem;
+}
 /* ------------------------------------ Services */
 #tourCategoriesContainer {
-  display: flex;
-  flex-wrap: wrap;
+     display: grid
+;
+    grid-template-columns: repeat(4, 1fr);
 }
 .tourCategory {
   border: 1px solid #ccc;
   margin: 1rem;
+      display: flex
+;
+    flex-direction: column;
+    align-items: center;
 }
 .tourCategoryImg {
   width: 300px;
@@ -100,12 +147,16 @@ nav{
 }
 /* ------------------------------------ Tours */
 #toursContainer {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  padding: 1rem;
 }
 .tour {
   border: 1px solid #ccc;
-  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .tourImage {
   width: 300px;
@@ -113,9 +164,18 @@ nav{
 }
 /* ------------------------------------ packages */
 #packages {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.package {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.tourLocation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .packageImage {
   width: 300px;
@@ -138,32 +198,34 @@ nav{
 }
 #tourCountersContainer {
   display: flex;
-  justify-content: center;
-  background-color: aquamarine;
+  justify-content: space-evenly;
+  background-color: var(--theme-bg-1);
+  padding: 2rem;
 }
 .tourCounterBox {
   padding: 2rem;
-  margin: 1rem;
-  background: red;
+  background: var(--theme-color);
   border-radius: 5px;
 }
 #ourCoreValuesBox {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
+  padding: 2rem;
 }
-.coreValueBox{
+.coreValueBox {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 1rem;
 }
-
 
 /* ------------------------------------ footer */
-footer{
+footer {
   background-color: var(--theme-color);
 }
-#footerContainer{
+#footerContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  padding: 1rem;
 }
 
 /* ------------------------------------ contact us */
@@ -174,7 +236,7 @@ footer{
 }
 
 /* ------------------------------------ Contact */
-#contactUsSection{
+#contactUsSection {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }

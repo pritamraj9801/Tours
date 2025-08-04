@@ -1,6 +1,6 @@
 import { getTours } from "../DatabaseSchema/dbSchema";
 const Tours = () => {
-  return <div id="toursContainer">
+  return <div id="toursContainer" className="mt-4">
     {getTours().map((tour, index) => (<div className="tour" key={index}>
       <img src={tour.imageURL} alt="Tour" className="tourImage"/>
       <h3>{tour.name}</h3>

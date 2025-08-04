@@ -2,22 +2,22 @@ const About = () => {
   return (
     <div>
       <div id="aboutTitle">
-        <h3 className="text-center">Kiwi Adventures Tour & Travel</h3>
+        <h3 className="text-center m-4">Kiwi Adventures Tour & Travel</h3>
         <h4 className="text-center">
           “We guarantee – Making your journey more interesting than advertised!”
         </h4>
       </div>
-      <div id="aboutUsSection" className="mt-2">
+      <div id="aboutUsSection" className="mt-4">
         <div className="aboutUsSectionImage">
           <img
             src="./images/Designs/welcomeBg.jpg"
             alt="not found"
-            style={{ width: "500px", height: "500px" }}
+            style={{ width: "700px", height: "500px" }}
           />
         </div>
-        <div>
+        <div className="p-1">
           <h2>Our Story</h2>
-          <h3>
+          <p className="mt-1 text-justify">
             With over 22 years of local expertise and 16+ years of curating
             exceptional travel experiences, we are a proudly New Zealand-owned
             tour company dedicated to delivering unforgettable journeys. Our
@@ -31,12 +31,10 @@ const About = () => {
             experience. Specializing in exclusive Private Tours with customised
             itineraries, design to deliver unforgettable experiences for
             families and groups of friends, ensuring personalized adventures
-            tailored to your needs
-          </h3>
-          <h3>“We don't just show you places — we make you feel them.”</h3>
+            tailored to your needs. “We don't just show you places — we make you feel them.”</p>
         </div>
       </div>
-      <div id="tourCountersContainer" className="mt-2">
+      <div id="tourCountersContainer" className="mt-4">
         <div className="tourCounterBox">
           <h2>250+</h2>
           <h3>Curated Tours</h3>
@@ -54,7 +52,7 @@ const About = () => {
           <h3>Years in Tourism</h3>
         </div>
       </div>
-      <div id="ourCoreValuesContainer" className="mt-2">
+      <div id="ourCoreValuesContainer" className="mt-4">
         <h2 className="text-center">Our Core Values</h2>
         <h3 className="text-center">
           We’re driven by purpose, guided by integrity, and inspired by the
@@ -79,7 +77,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="mt-4">
         <h3 className="text-center">Your Next Adventure Begins Now</h3>
         <h4 className="text-center">Don’t just travel. Explore deeper, connect stronger, and live freer with Kiwi Adventures.</h4>
         <div>
