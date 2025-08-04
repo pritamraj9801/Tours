@@ -10,6 +10,7 @@ body {
 :root {
   --color-white: #fff;
   --color-black: #000;
+  --theme-color:#C5B0CD;
 }
 .mt-2 {
   margin-top: 2rem;
@@ -22,6 +23,17 @@ body {
 }
 .text-center {
   text-align: center;
+}
+/* ------------------------------------ Header */
+nav{
+  background-color: var(--theme-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+#navLinks a{
+  text-decoration: none;
+  padding: 0 10px;
 }
 /* ------------------------------------ Home */
 #welcomeSection {
@@ -49,6 +61,7 @@ body {
 #tourLocations {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .locationImage {
   width: 300px;
@@ -57,6 +70,7 @@ body {
 #testimonials {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .testimonialImage {
   width: 300px;
@@ -101,8 +115,66 @@ body {
 #packages {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .packageImage {
   width: 300px;
   height: 400px;
+}
+/* ------------------------------------ about */
+#aboutTitle {
+  background-image: url("../images/Designs/welcomeBg.jpg");
+  background-size: cover;
+  height: 300px;
+}
+#aboutUsSection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.aboutUsSectionImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#tourCountersContainer {
+  display: flex;
+  justify-content: center;
+  background-color: aquamarine;
+}
+.tourCounterBox {
+  padding: 2rem;
+  margin: 1rem;
+  background: red;
+  border-radius: 5px;
+}
+#ourCoreValuesBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+.coreValueBox{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+/* ------------------------------------ footer */
+footer{
+  background-color: var(--theme-color);
+}
+#footerContainer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* ------------------------------------ contact us */
+#contact-header {
+  background-image: url("../images/Designs/welcomeBg.jpg");
+  background-size: cover;
+  height: 300px;
+}
+
+/* ------------------------------------ Contact */
+#contactUsSection{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
